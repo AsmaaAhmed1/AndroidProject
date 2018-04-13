@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/startd"
+                android:layout_marginTop="18dp"
+                android:text="Name Of Trip"
+                android:textColor="@color/common_signin_btn_dark_text_default" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt1"
+                android:layout_alignBottom="@+id/txt1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:text="nme"
+                android:textColor="@color/common_signin_btn_dark_text_default" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView16"
+                android:layout_below="@+id/textView11"
+                android:layout_marginTop="30dp"
+                android:text="Start Point"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/startPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView13"
+                android:layout_alignBottom="@+id/textView13"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:layout_alignStart="@+id/Name"
+                android:text="start" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/startd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/endd"
+                android:layout_below="@+id/txt1"
+                android:layout_marginTop="20dp"
+                android:text="Start Place"
+                android:textColor="@color/common_signin_btn_dark_text_default" />
+
+            <TextView
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/startd"
+                android:layout_alignBottom="@+id/startd"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/txt1"
+                android:text="start"
+                android:textColor="@color/common_signin_btn_dark_text_default" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+
+
+
+        <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/time"
+                android:layout_alignBottom="@+id/time"
+                android:layout_alignEnd="@+id/textView16"
+                android:layout_marginTop="30dp"
+            android:layout_weight="1"
+
+                android:text="Trip Time" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/date"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="30dp"
+            android:text="time"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView14"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_toStartOf="@+id/delete"
+                android:text="Trip Date"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView16"
+                android:layout_marginTop="30dp"
+                android:layout_alignBottom="@+id/textView16"
+                android:layout_toEndOf="@+id/delete"
+                android:text="date"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/time"
+            android:text="Delete"
+            android:background="@drawable/rounded"
+
+            android:textColor="@color/common_signin_btn_dark_text_default" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.technologycity.tripforlife.AddTrips">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tripName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:text="Trip Name"
+        android:textColor="@color/wallet_dim_foreground_inverse_holo_dark" />
+
+    <EditText
+        android:id="@+id/tripName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/start"
+        android:layout_marginStart="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:shadowColor="@color/colorPrimary"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_below="@+id/tripName"
+        android:layout_marginTop="29dp"
+        android:text="Start Point"
+        android:textColor="@color/wallet_bright_foreground_holo_light" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/end"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_below="@+id/AddStart"
+        android:layout_marginTop="35dp"
+        android:text="End Point"
+        android:textColor="@color/wallet_bright_foreground_holo_light" />
+
+    <TextView
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/tripdate"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StartDate"
+        android:layout_alignBottom="@+id/StartDate"
+        android:layout_alignStart="@+id/textView2"
+        android:text="Trip Date"
+        android:textColor="@color/wallet_bright_foreground_holo_light" />
+
+    <TextView
+        android:id="@+id/tripdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StartDate"
+        android:layout_alignBottom="@+id/StartDate"
+        android:layout_alignStart="@+id/Timepi"
+        android:ems="10"
+        android:inputType="date"
+        android:text="" />
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/rounded"
+        android:text="Save"
+        android:textColor="@color/common_signin_btn_dark_text_default" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toEndOf="@+id/tripdate"
+        android:background="@drawable/rounded"
+        android:text="Cancel"
+        android:textColor="@color/common_signin_btn_dark_text_default" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/StartDate"
+        android:layout_marginTop="39dp"
+        android:text="time"
+        android:textColor="@color/wallet_bright_foreground_holo_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Timepi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/save"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/save"
+        android:layout_alignBottom="@+id/save"
+        android:layout_alignStart="@+id/checkBox"
+        android:background="@drawable/rounded"
+        android:text="delete"
+        android:textColor="@color/common_signin_btn_dark_text_default"
+        android:textColorHighlight="@color/common_signin_btn_dark_text_default" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StartTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Round Trip"
+        android:textColorLink="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cancel"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType=""
+        android:text="" />
+
+    <Button
+        android:id="@+id/AddStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/start"
+        android:layout_alignBottom="@+id/start"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/rounded"
+        android:text="Add Start"
+        android:textColor="@color/common_signin_btn_dark_text_default" />
+
+    <Button
+        android:id="@+id/AddEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/end"
+        android:layout_alignBottom="@+id/end"
+        android:layout_alignStart="@+id/AddStart"
+        android:background="@drawable/rounded"
+        android:text="Add End"
+        android:textColor="@color/common_signin_btn_dark_text_default" />
+
+    <Button
+        android:id="@+id/StartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/AddEnd"
+        android:layout_below="@+id/AddEnd"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded"
+        android:text="Add date"
+        android:textColor="@color/common_signin_btn_dark_text_default" />
+
+    <Button
+        android:id="@+id/StartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Timepi"
+        android:layout_alignBottom="@+id/Timepi"
+        android:layout_alignStart="@+id/StartDate"
+        android:background="@drawable/rounded"
+        android:text="Add Time"
+        android:textColor="@color/common_signin_btn_dark_text_default" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/note"
+        android:layout_alignEnd="@+id/textView5"
+        android:text="Add Note"
+        android:textColor="@color/wallet_bright_foreground_holo_light" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_alignStart="@+id/textView"
+        android:text="Trip Type"
+        android:textColor="@color/wallet_bright_foreground_holo_light" />
+
+
+</RelativeLayout>
